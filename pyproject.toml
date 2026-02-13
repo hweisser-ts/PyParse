@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["getShimadzuData", "getWatersData", "PyParse"]
+
+[project]
+name = "PyParse"
+version = "1.1.0"
+authors = [
+  { name="Joseph Mason", email="joseph.mason@gsk.com" },
+  { name="Francesco Rianjongdee", email="francesco.rianjongdee@gsk.com" },
+  { name="Harry Wilders", email="harry.wilders@gsk.com" },
+  { name="David Fallon", email="david.fallon@gsk.com" },
+]
+description = "Automated analysis of LCMS data for high-throughput chemistry experiments"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.7"
+dependencies = [
+  "matplotlib",
+  "seaborn",
+  "pandas",
+  "rdkit",
+  "jinja2",
+  "numpy",
+]
+
+[project.urls]
+Repository = "https://github.com/thatchemistryguy/PyParse"
+Documentation = "https://thatchemistryguy.github.io/PyParse/index.html"
