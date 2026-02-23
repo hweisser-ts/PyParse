@@ -1,9 +1,6 @@
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-py-modules = ["getShimadzuData", "getWatersData", "PyParse"]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "PyParse"
